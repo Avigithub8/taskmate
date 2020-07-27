@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  <title>Welcome To Index Page</title>
+{% endblock title %}
+
+
+{% block content %}
+
+<div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/mnk3.jpg' %}" alt="picture" class="rounded-lg shadow-sm" width="370" height="400">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/mnk3.jpg' %}" alt="picture" class="rounded-lg shadow-sm" width="370" height="400">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/mnk3.jpg' %}" alt="picture" class="rounded-lg shadow-sm" width="370" height="400">
+            </div>
+        </div>
+        <div class="row mt-5">
+           <div class="col-md-9 offset-md-1">
+                <center><p class="h1 text-primary">Quick and easy to use,Anytime ,Anywhere!</p></center>
+                <center><p class="h2 mt-3">Plan your day,Anytime ,Anywhere!</p></center>
+                <center><p class="h4 mt-2">Life is risky,Anytime ,Anywhere!</p></center>
+
+                <center><a href="{% url 'todolist'%}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow-sm">Get's Started</button></a></center>
+            </div>
+        </div>
+    </div> 
+{% endblock content %}
